@@ -38,7 +38,7 @@ async def send_to_support_call(call: types.CallbackQuery, state: FSMContext, cal
     keyboard = await support_keyboard(messages="many", user_id=call.from_user.id)
 
     await bot.send_message(support_id,
-                           f'Фамилия Имия: {call.from_user.full_name}\n'
+                           f'Фамилия Имя: {call.from_user.full_name}\n'
                            f'ID: {call.from_user.id}\n'
                            f'username: {call.from_user.username}'
                            )

@@ -7,7 +7,9 @@ from loader import dp
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message):
     await message.answer(
-        f'''Здравствуйте, {message.from_user.full_name}!
+        f'''
+        Здравствуйте, {message.from_user.full_name}!
         Чтоб связаться с оператором наберите команду
-        /support_call'''
+        /support_call
+        '''
     )
